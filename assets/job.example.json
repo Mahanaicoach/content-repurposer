@@ -1,0 +1,23 @@
+{
+  "timezone": "Europe/Istanbul",
+  "posts": [
+    {
+      "platform": "tiktok",
+      "file": "output/my_clip__tiktok.mp4",
+      "content": "A bad rate limit cost one company $500M. Full guide — link in bio 🔗\n\n#claudecode #ai #buildinpublic",
+      "scheduledFor": "2026-06-21T18:00:00",
+      "privacy_level": "PUBLIC_TO_EVERYONE",
+      "allow_comment": true,
+      "allow_duet": true,
+      "allow_stitch": true
+    },
+    {
+      "platform": "youtube",
+      "file": "output/my_clip__youtube.mp4",
+      "content": "A bad rate limit cost one company $500M. Full guide linked in the description 👇\nhttps://yourlink.com",
+      "scheduledFor": "2026-06-21T18:00:00",
+      "title": "The rate-limit mistake that cost $500M",
+      "visibility": "public"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# Never commit your real key or personal config
+.env
+repurpose-config.md
+job.json
+
+# Generated outputs
+output/
+*.mp4
+!assets/*.mp4
+
+# Python / Whisper
+__pycache__/
+*.pyc
