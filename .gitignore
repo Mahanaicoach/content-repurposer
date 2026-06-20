@@ -11,3 +11,7 @@ output/
 # Python / Whisper
 __pycache__/
 *.pyc
+
+# Banner render artifacts
+assets/node_modules/
+assets/package*.json

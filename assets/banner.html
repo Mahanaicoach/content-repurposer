@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1280px; height:640px; }
+  body {
+    font-family: -apple-system, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+    color:#fff; overflow:hidden;
+    background:
+      radial-gradient(1100px 700px at 88% -8%, rgba(168,85,247,.35), transparent 60%),
+      radial-gradient(900px 600px at 6% 112%, rgba(236,72,153,.28), transparent 60%),
+      linear-gradient(135deg, #0b0e14 0%, #11131b 55%, #0b0e14 100%);
+    position:relative;
+  }
+  /* subtle grid */
+  body::before{
+    content:""; position:absolute; inset:0;
+    background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),
+                     linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+    background-size:44px 44px; mask:radial-gradient(120% 120% at 50% 30%,#000 30%,transparent 80%);
+  }
+  .wrap{ position:relative; z-index:2; padding:74px 80px; height:100%; display:flex; flex-direction:column; }
+  .tag{
+    display:inline-flex; align-items:center; gap:9px; align-self:flex-start;
+    font-size:18px; font-weight:600; letter-spacing:.04em; text-transform:uppercase;
+    color:#cbb6ff; background:rgba(168,85,247,.12); border:1px solid rgba(168,85,247,.4);
+    padding:9px 16px; border-radius:999px;
+  }
+  .dot{ width:9px; height:9px; border-radius:50%; background:#a855f7; box-shadow:0 0 14px #a855f7; }
+  h1{ font-size:88px; font-weight:800; letter-spacing:-.02em; margin-top:26px; line-height:1; }
+  h1 .accent{ background:linear-gradient(90deg,#c084fc,#f472b6); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .sub{ font-size:30px; color:#aeb6c2; margin-top:22px; font-weight:500; max-width:920px; line-height:1.35; }
+  .sub b{ color:#e9edf3; font-weight:700; }
+  .flow{ display:flex; align-items:stretch; gap:18px; margin-top:auto; }
+  .card{
+    flex:1; background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.10);
+    border-radius:20px; padding:22px 24px; backdrop-filter:blur(6px);
+  }
+  .card .plat{ font-size:23px; font-weight:800; display:flex; align-items:center; gap:11px; }
+  .card .cta{ font-size:19px; color:#9aa3b0; margin-top:10px; }
+  .ico{ width:30px; height:30px; border-radius:9px; display:inline-grid; place-items:center; font-size:17px; }
+  .ig{ background:linear-gradient(45deg,#feda75,#d62976,#962fbf); }
+  .tt{ background:#000; border:1px solid #2b2f3a; }
+  .yt{ background:#FF0000; }
+  .arrow{ align-self:center; font-size:30px; color:#5b6473; }
+  .src{ position:absolute; right:80px; top:78px; text-align:right; z-index:3; }
+  .src .n{ font-size:21px; color:#7c8696; }
+  .src .v{ font-size:21px; color:#c084fc; font-weight:700; }
+</style>
+</head>
+<body>
+  <div class="src"><div class="n">schedules via</div><div class="v">Zernio API</div></div>
+  <div class="wrap">
+    <div class="tag"><span class="dot"></span>Claude Skill</div>
+    <h1>content-<span class="accent">repurposer</span></h1>
+    <div class="sub">One Reel or TikTok → <b>3 platform-perfect posts</b>. It finds your call-to-action and <b>translates it per platform</b> — then auto-schedules.</div>
+    <div class="flow">
+      <div class="card"><div class="plat"><span class="ico ig">📸</span>Instagram</div><div class="cta">“comment WORD &amp; I’ll send the link”</div></div>
+      <div class="arrow">→</div>
+      <div class="card"><div class="plat"><span class="ico tt">🎵</span>TikTok</div><div class="cta">“link in bio 🔗”</div></div>
+      <div class="arrow">→</div>
+      <div class="card"><div class="plat"><span class="ico yt">▶</span>YouTube</div><div class="cta">“link in description 👇”</div></div>
+    </div>
+  </div>
+</body>
+</html>

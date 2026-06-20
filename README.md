@@ -1,5 +1,7 @@
 # content-repurposer
 
+![content-repurposer — one Reel or TikTok into platform-perfect Instagram, TikTok, and YouTube posts, auto-scheduled via Zernio](assets/banner.png)
+
 A Claude skill that turns **one** short-form video (an Instagram Reel or a TikTok)
 into platform-correct versions for **Instagram, TikTok, and YouTube** — then
 **auto-schedules TikTok + YouTube** through your own [Zernio](https://zernio.com)
