@@ -59,6 +59,7 @@ content-repurposer/
 ├── SKILL.md                 # the skill instructions Claude follows
 ├── scripts/
 │   ├── setup.sh             # one-time installer + verifier
+│   ├── update.sh            # pull the latest version, then re-run setup
 │   ├── repurpose.py         # transcribe + spoken-CTA detect/trim
 │   ├── scan_text_cta.py     # OCR on-screen CTA detection
 │   ├── cover_cta.py         # cover + replace an on-screen CTA card
@@ -71,6 +72,17 @@ content-repurposer/
 Transcription and all video edits run **locally** — no API, no key, no cost.
 Nothing leaves your machine until you schedule a post. Zernio is the only external
 service, and its first 2 connected accounts are free.
+
+## Updating
+
+```bash
+bash ~/.claude/skills/content-repurposer/scripts/update.sh
+```
+
+It pulls the latest version, keeps your own commits, and re-runs `scripts/setup.sh` to install
+any new tool. Your `.env` and `repurpose-config.md` are never touched.
+Forked it on GitHub? Run `git push` afterwards, or click **Sync fork** on your fork's
+page.
 
 ## License
 MIT
